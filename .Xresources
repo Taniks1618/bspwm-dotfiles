@@ -1,0 +1,99 @@
+Xft.dpi: 96
+Xft.antialias: true
+Xft.hinting: true
+Xft.rgba: rgb
+Xft.autohint: true
+Xft.hintstyle: hintfull
+Xft.lcdfilter: lcdfilter
+
+! Xterm
+XTerm*renderFont: true
+XTerm*faceName: xft:Bitstream Vera Sans Mono, \
+                xft:Bitstream Vera Sans Mono: size=10, \
+                xft:Monospace:style=Medium:size=10
+XTerm*faceSize: 11
+XTerm*utf8: 2
+XTerm*locale: true
+
+XTerm.vt100.translations: #override \n\
+  Ctrl <Key> j: smaller-vt-font() \n\
+  Ctrl <Key> k: larger-vt-font()
+
+
+! Every shell is a login shell by default (for inclusion of all necessary environment variables)
+XTerm*loginshell: true
+
+! I like a LOT of scrollback...
+XTerm*savelines: 16384
+
+! double-click to select whole URLs :D
+XTerm*charClass: 33:48,36-47:48,58-59:48,61:48,63-64:48,95:48,126:48
+
+! Rxvt unicode
+!! Appearance
+urxvt.termName: rxvt-unicode
+urxvt.scrollBar: false
+urxvt.background: black
+urxvt.foreground: gray
+!! Font prefferenes
+urxvt.font: xft:DejaVu Sans Mono:pixelsize=13
+urxvt.boldFont: xft:DejaVu Sans Mono:pixelsize=13:weight=bold
+urxvt.letterSpace: -1
+!! Larger history limit
+urxvt.saveLines: 1000000
+
+! Dracula Xresources palette
+!! COLORS
+
+! special
+URxvt*foreground:   #bbc5ff
+URxvt*background:   [95]#282a36
+URxvt*cursorColor:  #bbc5ff
+
+XTerm*foreground: #bbc5ff
+XTerm*background: #282a36
+XTerm*cursorColor: #bbc5ff
+
+! Colours
+! red
+*.color1:       #a54242
+*.color9:       #cc6666
+
+! green
+*.color2:       #8c9440
+*.color10:      #b5bd68
+
+! yellow
+*.color3:       #de935f
+*.color11:      #f0c674
+
+! blue
+*.color4:       #5f819d
+*.color12:      #81a2be
+
+! magenta
+*.color5:       #85678f
+*.color13:      #b294bb
+
+! cyan
+*.color6:       #5e8d87
+*.color14:      #8abeb7
+
+! white
+*.color7:       #707880
+*.color15:      #c5c8c6
+
+! Dmenu
+dmenu.font :            JetBrains Mono:pixelsize=13
+dmenu.background :      #222222
+dmenu.foreground :      #5F819D
+dmenu.selbackground :   #5F819D
+dmenu.selforeground :   #E0E5CD
+
+! State:           'bg',     'fg',     'bgalt',  'hlbg',   'hlfg'
+rofi.color-normal: #D4BE95,  #002b36,  #D4BE95,  #002b36,  #8FCEB6
+rofi.color-urgent: #fdf6e3,  #002b36,  #D4BE95,  #D4BE95,  #D4BE95
+rofi.color-active: #fdf6e3,  #002b36,  #D4BE95,  #268bd2,  #D4BE95
+
+!                  'background', 'border', 'separator'
+rofi.color-window: #42867A,      #002b36,  #002b36
